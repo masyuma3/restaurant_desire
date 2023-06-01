@@ -1,0 +1,1293 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    /* background-color:cornsilk; */
+    /* background-color:floralwhite; */
+    /* background-color:ivory; */
+    /* background-color:linen; */
+    /* background-color:seashell; */
+    /* background-color: blanchedalmond; */
+    background-color: rgb(255, 236, 207);
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.image_main{
+    margin-left: 110px;
+    margin-right: 110px;
+    background-image: url(images/Pictures/restoran.png);
+    height: 920px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linkers_none{
+    text-decoration: none;
+}
+
+.linkers_none p{
+    font-size: 35px;
+}
+
+.logo_main {
+    width: 250px;
+    height: 75px;
+}
+
+.logo_main a img{
+    width: 178px;
+    padding-left: 12px;
+    padding-top: 5px;
+    /* padding-top: 15px; */
+}
+
+/* смотреть внимательно когда работаешь с блоками, а когда с обьекстами в них (паддинг можно случайно поставить блоку, а не обьекту (тогда сдивнутся все остальные блоки)) */
+
+.booking_main_buttom{
+    text-align: center;
+    padding-top: 5px;
+    width: 250px;
+    height: 75px;
+}
+
+.booking_main_buttom :hover{
+    color:rgb(250, 14, 175);
+    cursor: pointer;
+}
+
+.booking_main_buttom :active{
+    color:rgb(255, 0, 212);
+}
+
+.booking_main_buttom p{
+    width: 250px;
+    /* color: #9600ad;  */
+    /* color: hwb(218 0% 27%); */
+    /* color:lightcoral; */
+    color:#de0f3f; /*crimson*/
+    font-family: Snell Roundhand;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.menu_button_main{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    padding-top: 1px;
+    width: 250px;
+    height: 75px;
+}
+
+.menu_button_main a p{
+    margin:0;
+    /* color:blueviolet; */
+    /* color:darkblue; */
+    /* color: hwb(218 0% 27%); */
+    /* color:darkorchid; */
+    /* color:aquamarine; */
+    /* color:aqua; */
+    /* color:lightcoral; */
+    color:#de0f3f;
+    /* color:violet; */
+    /* color:teal; */
+    /* color:mediumslateblue; */
+    /* color:indigo; */
+    /* color:indianred; */
+    /* color:brown; */
+    /* color:coral; */
+    /* color:crimson; */
+    /* color:azure; */
+    /* color:darkmagenta; */
+    /* color:olive; */
+    /* color:darkslategrey; */
+    /* color:springgreen; */
+    /* color:navy; */
+    /* font-family:fantasy; */
+    font-family: Snell Roundhand;
+    font-size:88px;
+    text-decoration: underline;
+}
+
+.menu_button_main a :hover{
+    color:rgb(250, 14, 175);
+}
+
+.menu_button_main a :active{
+    color:rgb(255, 0, 212);
+}
+
+.feedback_main{
+    text-align: center;
+    padding-top: 5px;
+    width: 250px;
+    height: 75px;
+}
+
+.feedback_main p:hover{
+    color:rgb(250, 14, 175);
+    cursor: pointer;
+}
+
+.feedback_main :active{
+    color:rgb(255, 0, 212);
+}
+
+.feedback_main p{
+    /* width: 250px; */
+    /* color: #ff1279; */
+    /* color: hwb(218 0% 27%); */
+    /* color:lightcoral; */
+      color:#de0f3f;
+    font-family: Snell Roundhand;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.about_us_main{
+    width: 250px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.about_us_main img{
+    padding-left: 12px;
+    height: 465px;
+}
+
+.image_name{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.disp{
+    display: none;
+}
+
+.full_moon{
+    width: 250px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.full_moon img{
+    margin-top: 11px;
+    /* margin-left: 18px; */
+    margin-left: 24px;
+    height: 195px;
+}
+
+
+.full_main_space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.503);
+    /* opacity: 0.3; */
+    /* display: none; */
+    /* z-index: 11; */
+    position: fixed;
+    top:0;
+    right:0;
+    
+}
+
+.booking_main{
+    width:28%;
+    /* доставка-38 */
+    height: 65vh;
+    /* z-index: 12; */
+    border: 7px solid rgba(251, 255, 0, 0.8);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    overflow: auto;
+}
+
+.booking_exit_main{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.732);
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.732);
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.booking_exit_main:hover{
+    cursor: pointer;
+    background-color:rgb(255, 179, 176);
+}
+
+.booking_body{
+    /* background-image: url(images/Pictures/stolik.jpg);
+    height: 70%;
+    width: 100%;
+    background-repeat: no-repeat; */
+    /* height: 100vh; */
+    width: 100%;
+    background-color:rgb(255, 217, 191);
+}
+
+.booking_body p{
+    padding-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color:rgb(58, 57, 57);
+    /* color:rgb(193, 147, 32) */
+}
+
+.booking_menu_form{
+    text-align: center;
+}
+
+.cursor:hover{
+    cursor: pointer;
+}
+
+.booking_menu_form section{
+    padding-top:10px;
+    border-top: 1px solid white;
+}
+
+.booking_menu_form input{
+    /* border:0; */
+    border-radius: 3px;
+    width: 60%;
+    margin-top:10px;
+    padding-top:10px;
+    font-size: 15px;
+}
+
+#bok_kyiv,#bok_od{
+    width: 5px;
+}
+
+
+
+.full_feedback_space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.503);
+    /* opacity: 0.3; */
+    /* display: none; */
+    /* z-index: 11; */
+    position: fixed;
+    top:0;
+    right:0;
+    
+}
+
+.feedback{
+    /* font-family:Snell Roundhand; */
+    color:rgb(0, 122, 222);
+    font-size: 28px;
+    width:38%;
+    height: 65vh;
+    /* z-index: 12; */
+    border: 7px solid rgba(251, 255, 0, 0.8);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    background-color:azure;
+}
+
+.feedback_form p{
+    margin:20px;
+}
+
+.feedback_exit{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.732);
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.732);
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.feedback_exit:hover{
+    cursor: pointer;
+    background-color:rgb(255, 179, 176);
+}
+
+.feedback_form{
+   text-align: center;
+}
+
+.comment{
+    font-size: 20px;
+    height: 120px;
+    width: 65%;
+}
+
+
+.stars_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.stars_1, .stars_2{
+    color:lightgray;
+    font-size: 50px;
+}
+
+
+.hightlight{
+   color:gold;
+   cursor: pointer;
+}
+
+.stars_color{
+    color:gold;
+}
+
+.feedback_send{
+    height: 25px;
+    width: 40%;
+}
+
+.feedback_send:hover{
+    cursor: pointer;
+}
+
+.flex_feedback{
+    display: flex;
+    justify-content: space-around;
+}
+
+.odesa_feedback:hover,.kyiv_feedback:hover{
+    cursor: pointer;
+    color:rgb(40, 40, 255);
+    text-decoration: underline;
+}
+
+.feedback_color{
+color:rgb(188, 30, 255);
+/* text-decoration: underline; */
+}
+
+.vidguk{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    /* background-color: aqua; */
+}
+
+.grey_c{
+    color:grey;
+}
+
+/* href="#" перехода не будет (на саму себя ссылка(на ту же страницу сайта)*/
+/* margin-right:-12px; сделает элементы ближе друг к другу */
+
+h1{
+    margin-top: 120px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 66px;
+    margin-bottom: 0;
+
+     /* color:darkblue; */
+     /* color:royalblue; */
+     /* color:rgb(203, 155, 35); */
+     /* color:#015bd2; */
+     /* color:navy; */
+     /* color:crimson; */
+     /* color:darkmagenta; */
+}
+
+h1 a:visited{
+    color:rgb(203, 155, 35);
+}
+
+
+.food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-right: 40px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.food a li{
+    padding-top:0;
+    width: 380px;
+    height: 205px;
+    border: 2.5px solid rgb(203, 155, 35);
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+}
+
+.food a{
+    text-decoration: none;
+    margin-bottom: 50px; 
+} 
+
+.breakfast_name{
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(254, 228, 29);
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.salads_name{
+    text-shadow: -1px -1px 0px #c28514, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(254, 228, 29);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.soups_name{
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(255, 191, 0);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pizza_name{
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(255, 191, 0);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.garnish_name{
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(254, 228, 29);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.meat_name{
+    text-shadow: -1px -1px 0px #bb982f, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(254, 228, 29);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.seafood_name{
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(255, 191, 0);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desserts_name{
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(255, 191, 0);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-right: 40px;
+    margin-top:0; 
+}
+
+.drinks li{
+    padding-top:0;
+    border: 2.5px solid rgb(203, 155, 35);
+    width: 820px;
+    height: 250px;
+    list-style-type: none;
+    position: relative;
+}
+
+.drinks a{
+    margin-bottom: 50px;
+}
+
+.no-alcohol_name{
+    text-align: center;
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(0, 255, 64);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alcohol_name{
+    text-align: center;
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    color:rgb(0, 255, 64);
+    font-family: Snell Roundhand;
+    font-weight: bold;
+    font-size: 61px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* наоборот все (то есть bottom-отступ от низа) */
+
+/* margin-отсуп от блока (отступ за блоком), padding-отсуп внутри блока (в самом блоке)*/
+/* но если мы обращаемся к блокам внутри ul, то нужен padding (ибо мы внутри блока ul) */
+
+/* flex-wrap, flex-content,... прописовать там же, где и display:flex */
+
+.down_button{
+/* margin-top: 484px;
+margin-right: 1482px; */
+position: absolute;
+right: 17px;
+top:830px;
+}
+
+.down_button:hover{
+    transform: scale(1.1);
+}
+
+h2{
+    font-size: 45px;
+    margin-bottom: 0;
+    margin-top:55px;
+    text-align: center;
+    font-family: Snell Roundhand;
+    /* color:darkblue; */
+    color:rgb(203, 155, 35);
+    /* color:crimson; */
+    /* color:darkmagenta; */
+}
+
+.popular_food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 40px;
+    padding-bottom: 5px;
+}
+
+.popular_food li{
+    margin-bottom: 50px;
+    width: 375px;
+    height: 205px;
+    border: 2.5px solid rgb(203, 155, 35);
+    list-style-type: none;
+}
+
+.popular_food a{
+    text-align: center;
+    text-decoration: none;
+    color:rgb(203, 155, 35);
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Snell Roundhand;
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    /* color:cyan; */
+    /* color:aquamarine; */
+    color:rgb(255, 233, 88);
+}
+
+.top_pop{
+    position: relative;
+}
+
+.pop1{
+    font-size: 40px;
+    position: absolute;
+    top:30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.pop2{
+    position: absolute;
+    top:30%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.pop3{
+    font-size: 40px;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop4{
+    font-size: 37px;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+h3{
+    font-size: 45px;
+    margin-bottom: 0px;
+    /* font-size: 39px; */
+    margin-top:65px;
+    text-align: center;
+    font-family: Snell Roundhand;
+    /* color:darkblue; */
+    color:rgb(203, 155, 35);
+    /* color:crimson; */
+    /* color:darkmagenta; */
+}
+
+.sales_food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+
+.sales_food li{
+    margin-bottom: 50px;
+    width: 375px;
+    height: 205px;
+    border: 2.5px solid rgb(203, 155, 35);
+    list-style-type: none;
+}
+
+.sales_food a{
+    text-align: center;
+    text-decoration: none;
+    color:rgb(203, 155, 35);
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Snell Roundhand;
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    /* color:cyan; */
+    /* color:aquamarine; */
+    /* color:chartreuse; */
+    color:rgb(255, 233, 88);
+}
+
+.top_sales{
+    position: relative;
+}
+
+.sales1{
+    font-size: 40px;
+    position: absolute;
+    top:30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.sales2{
+    position: absolute;
+    top:30%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.sales3{
+    font-size: 40px;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sales4{
+    font-size: 40px;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .food a:hover{
+    transform: scale(1.1);
+}
+
+.drinks a:hover{
+    transform: scale(1.05);
+} */
+
+h4{
+    font-size: 45px;
+    /* font-size: 39px; */
+    margin-top:65px;
+    text-align: center;
+    font-family: Snell Roundhand;
+    margin-bottom: 0;
+    /* color:darkblue; */
+    color:rgb(203, 155, 35);
+    /* color:crimson; */
+    /* color:darkmagenta; */
+
+}
+
+.recomended_food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+
+.recomended_food li{
+    margin-bottom: 50px;
+    width: 375px;
+    height: 205px;
+    border: 2.5px solid rgb(203, 155, 35);
+    list-style-type: none;
+}
+
+.recomended_food a{
+    text-align: center;
+    text-decoration: none;
+    color:rgb(203, 155, 35);
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Snell Roundhand;
+    text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+    /* color:cyan; */
+    /* color:aquamarine; */
+    /* color:chartreuse; */
+    color:rgb(255, 233, 88);
+}
+
+.top_rec{
+    position: relative;
+}
+
+.rec1{
+    font-size: 40px;
+    position: absolute;
+    top:30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.rec2{
+    position: absolute;
+    top:30%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.rec3{
+    font-size: 39px;
+    position: absolute;
+    top:30%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+.rec4{
+    font-size: 40px;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* text-shadow: -1px -1px 0px #73590b, 1px -1px 0px #8e5b1a, -1px 1px 0px #000000, 1px 1px 0px #000000; 
+color:rgb(255, 191, 0);
+font-family: Snell Roundhand;
+font-weight: bold;
+font-size: 61px;
+margin:0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+
+
+.desire_main_margin{
+    margin-top: 150px;
+    margin-bottom: -45px;
+}
+
+.desire_img_footer_main{
+    width: 100%;
+}
+
+
+footer{
+    background-color:rgb(226, 188, 135);
+    color:rgb(255, 246, 209);
+    /* margin-top: 150px; */
+    display:flex;
+    justify-content: space-between;
+    padding-top: 1.5vh;
+}
+
+.kyiv_rest{
+    padding-left: 27px;
+    /* text-align: right; */
+}
+
+.odesa_rest{
+    padding-right: 26px;
+}
+
+.footer_center{
+    font-size: 25px;
+    width:32%;
+    text-align: center;
+    font-family: Cochin;
+}
+
+.footer_kyiv_name{
+    font-size: 23px;
+    width:13%;
+    font-family: Cochin;
+    text-align: center;
+}
+
+.footer_odesa_name{
+    font-size: 23px;
+    width:13%;
+    font-family: Cochin;
+    text-align: center;
+}
+
+.footer_phones{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer_phones a{
+    margin-bottom: 10px;
+    text-decoration:none;
+    color:rgb(255, 246, 209);
+    border:2px solid rgb(255, 244, 193);
+    border-radius: 10px;
+    font-size:23px;
+}
+
+.footer_phones a:hover{
+    background-color:pink;
+}
+
+.phone:before {
+    content: "\260e";
+    /* margin-right: 0.5em; */
+  }
+
+  .mail{
+   padding-top:4px;
+  }
+
+footer div img{
+    border: 2.5px solid rgb(45, 236, 12);
+    border-radius: 30px;
+    height: 18vh;
+}
+
+
+@media all and (max-width: 1336px){
+
+.image_main{
+    display: none;
+}
+
+.phone_head{
+    display:block;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo_main a img{
+    width:100px;
+}
+
+.logo_main{
+    width: 100px;
+    display: flex;
+}
+
+.header_name_block{
+    display: flex;
+    height: 200px;
+    /* justify-content: start; */
+    /* background-image: url("images/Pictures/fone1.jpg"); */
+}
+
+.esire{
+    padding-top:20px;
+    font-size: 60px;
+    color:#ffd815;
+    margin-left: -15px;
+}
+
+.phone_menu{
+    width: 128px;
+    height: 195px;
+    background-color:rgb(255, 89, 122);
+    position: relative;
+    border: 2px solid rgb(255, 255, 70);
+    border-radius: 3px;
+}
+
+.phone_close_menu{
+    color: rgb(255, 255, 70);
+    padding:0 3px;
+    font-size: 20px;
+    border-top: 2px solid rgb(255, 255, 70);
+    border-right: 2px solid rgb(255, 255, 70);
+    border-radius: 2px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+
+.phone_close_menu:hover{
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.657);
+}
+
+.phone_menu ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.phone_menu ul li{
+    padding:3px 0;
+    font-size: 17px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.phone_menu ul li:not(.about_us_view, .phone_about_us)::before{
+    content:"‣";
+    color:rgb(255, 255, 70);
+}
+
+.phone_menu ul li:not(.about_us_not_view, .phone_about_us)::before{
+    content:"⁃";
+    color:rgb(255, 255, 70);
+}
+
+.pointer_down::before{
+    content:"▾";
+    color:rgb(255, 255, 70);
+}
+
+.pointer_up::before{
+    content:"▴";
+    color:rgb(255, 255, 70);
+}
+
+.about_us_not_view{
+    margin-bottom: 2px;
+}
+
+.about_us_not_view a:hover{
+    text-decoration: underline;
+}
+
+.about_us_not_view span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_us_view,.phone_about_us{
+    color:rgb(255, 255, 70);
+}
+
+.last_el{
+    margin-bottom: 0px;
+}
+
+.phone_menu_button{
+    padding-top: 12px;
+    padding-right: 5px;
+    height: 40px;
+}
+
+.phone_menu_button img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.about_us_not_view a{
+   text-decoration: none;
+   color:rgb(255, 255, 70);
+}
+
+.about_us_not_view span{
+    color:rgb(255, 255, 70);
+}
+
+.phone_about_us:hover{
+    cursor: pointer;
+}
+
+.phone_foods{
+display: block;
+}
+
+.phone_foods ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0 25px;
+}
+
+.phone_foods ul li{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-right:  20px;
+    padding-left: 10px;
+    margin-bottom: 7px;
+    background-color: azure;
+    /* height: 38px; */
+}
+
+/* .pad_top{ */
+    /* padding-top:2px; */
+/* } */
+
+.phone_foods ul li:hover{
+    background-color:rgb(160, 255, 249);
+    cursor: pointer;
+}
+
+.phone_foods ul a{
+    text-decoration: none;
+    color:black;
+}
+
+.arrow_right{
+    transform: rotate(90deg);
+}
+
+.popular_food,.sales_food,.recomended_food{
+    display: none;
+}
+
+.phone_recomended_food,.phone_popular_food,.phone_sales_food{
+    display: block;
+}
+
+.phone_recomended_food{
+    list-style-type: none;
+    margin:0;
+    padding: 0 25px;
+}
+
+.phone_recomended_food li{
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border: 2.5px solid rgb(203, 155, 35);
+    font-weight: 700;
+    font-family: Snell Roundhand;
+    color:rgb(203, 155, 35);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.phone_recomended_food a{
+    text-decoration: none;
+}
+
+.phone_recomended_food li:hover{
+    background-color:rgb(226, 178, 66);
+    border: 2.5px solid rgb(209, 184, 39);
+    cursor: pointer;
+    color:rgb(255, 246, 209);
+}
+
+.phone_recomended_food li div img{
+    /* padding-top: 8px; */
+    border: 2.5px solid rgb(255, 208, 40);
+    border-radius: 1px;
+}
+
+.pad_food{
+    padding-top:7px;
+}
+
+
+h1,.food, .drinks,.kyiv_rest, .odesa_rest,.footer_kyiv_name,.footer_odesa_name,.footer_center,.footer_phones{
+    /* margin-top: 0; */
+    display: none;
+}
+
+.sales_food li,.recomended_food li, .popular_food li{
+    width: 135px;
+    height: 90px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+h2,h3,h4{
+    font-size: 32px;
+}
+
+.phone_footer{
+    font-family:Snell Roundhand;
+    display: block;
+}
+
+.phone_footer ul{
+    margin:0;
+    /* list-style-type: none; */
+    padding-left: 50px;
+}
+
+.phone_footer ul li{
+    padding: 3px 0;
+}
+
+.phone_footer ul li a{
+    text-decoration: none;
+    color:rgb(255, 246, 209);
+}
+
+/* .phone_mail a::after{
+    content: " ✉️";
+}
+
+.phone_call a::after{
+        content: " 🤙🏻";
+} */
+
+.phone_menu_name{
+    display: block;
+    font-family: Snell Roundhand;
+    text-align: center;
+    /* color:rgb(43, 92, 255); */
+    color:rgb(4, 75, 255);
+    /* color:#c28514; */
+    /* font-weight: bold; */
+    /* text-shadow: -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white, 1px 1px 0px white;  */
+    font-size: 33px;
+    text-decoration: none;
+    /* position: absolute;
+    left:25px;
+    top:100px; */
+}
+
+.phone_menu_name a{
+    color:rgb(72, 123, 253); 
+    /* color:#c28514; */
+}
+
+
+.stars_flex span{
+font-size: 25px;
+}
+
+.booking_main{
+    width: 65%;
+    overflow: auto;
+}
+
+.feedback{
+    width: 70%;
+    overflow: auto;
+}
+
+.desire_main_margin{
+    display: none;
+}
+
+footer{
+    border-top: 2.5px solid rgb(254, 213, 158);
+    /* color: */
+    margin-top: 100px;
+}
+   
+}
+
+
+@media all and (max-width: 488px){
+    .small_biger{
+        display: none;
+    }
+
+    .phone_menu_name{
+        padding-top: 10px;
+    }
+}
+
+/* @viewport{
+    width: device-width;
+    zoom:1;
+} */

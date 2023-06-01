@@ -1,0 +1,1432 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    /* background-color:cornsilk; */
+     /* background-color:ivory; */
+     background-color: rgb(255, 236, 207);
+     /* background-color:seashell; */
+     font-family:Snell Roundhand;
+
+}
+
+/* div,p{
+    border: 1px solid blue;
+} */
+
+.disp_menu{
+    display: none;
+}
+
+#koshik_spisok > li.disp_menu {
+    display: none;
+}
+/* скрыть элементы li с классом disp_menu в koshik_spisok */
+
+.linkers_none{
+    text-decoration: none;
+}
+
+.header_menu{
+    display: flex;
+    justify-content:space-between;
+    /* background-color:lemonchiffon; */
+     /* background-color:ivory; */
+     /* background-color:cornsilk; */
+     background-color: rgb(255, 230, 192);
+     /* background-color:seashell; */
+     border-bottom: 1.5px solid rgb(203, 155, 35);
+}
+
+.logo_main_menu{
+    width: 200px;
+    height: 150px;
+    margin-left: 120px;
+}
+
+.logo_main_menu a img{
+     width: 178px;
+     padding-left: 2px;
+     padding-top: 5px;
+}
+
+/* .bucket_main_menu{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    padding-right: 12px;
+    padding-top: 18px;
+} */
+
+/* .line{
+    position:absolute;
+    top:93.7px;
+    /* right:20px; */
+    /* right:100px; */
+    /* left:-44px; */
+/* } */ 
+
+/* .bucket_main_menu a:visited{
+    color: black;
+}
+
+.menu_backet_img{
+    padding-left: 0px;
+} */
+
+.spisok_button{
+    width: 200px;
+    height: 120px;
+    text-align: end;
+    margin-right: 120px;
+    margin-top: 47px;
+}
+
+.spisok_button img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* .des{
+    width: 400px;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.ire{
+    width: 400px;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 3px;
+    
+} */
+
+.desire{
+    width: 65%;
+    text-align: center;
+}
+
+.choose_title{
+    display:flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+.choose_rest_block form{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 3px;
+}
+
+.choose_name{
+    text-align: center;
+}
+
+.choose_rest{
+    /* width: 96%; */
+    color:rgb(203, 155, 35);
+    font-size: 39px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 38%;
+    /* text-decoration:underline; */
+}
+
+.choose_rest label:hover{
+    cursor: pointer;
+}
+
+.fone_choose{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 230, 192);
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.center_menu{
+    width:72%;
+}
+
+.choose_input input:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* #odesa_rest:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+} */
+
+.choose_borders{
+    width:14%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    padding-top: 5px;
+}
+
+.padding_l{
+    padding-left: 30px;
+    /* 35 */
+}
+
+.padding_r{
+    padding-right: 35px;
+}
+
+.choose_borders :hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.choose_input{
+    text-align: end;
+    padding-top: 5px;
+    width:5%;
+}
+
+.koshik_tovarov{
+    border: 3px solid gold;
+    border-radius: 10px;
+    /* padding-left:10px; */
+    /* list-style-type: none; */
+    font-size: 22px;
+    padding: 0;
+    background-color:crimson;
+    height: 600px;
+    /* padding-left: 8px; */
+    position:absolute;
+    left:25px;
+    /* ? */
+    top:125px; 
+    height: 552px;
+    width: 226px;
+    color:gold;
+    /* text-align: center; */
+}
+
+.koshik_tovarov ol{
+    /* list-style-position: inside;
+    list-style-type: decimal; */
+    overflow:auto;
+    margin: 0;
+    padding: 0 5px;
+    padding-top:5px;
+    /* list-style-type: none; */
+    height: 442px;
+}
+
+.koshik_tovarov ol li{
+    overflow-x: auto;
+    border-bottom: 1px solid gold;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    /* text-align: center; */
+    /* padding: 0px 10px; */
+}
+
+.koshik_tovarov_delete{
+    padding-left: 0.5px;
+    text-align: center;
+    font-weight: bold;
+    width: 13px;
+    height:13px;
+    border: 1.5px solid gold;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.koshik_tovarov ol li span{
+    /* border: 1px solid black; */
+    padding-right: 5px;
+    color:yellow;
+}
+
+.koshik_tovarov ol li section{
+    /* border: 1px solid pink; */
+    padding: 0 10px;
+
+}
+
+.koshik_tovarov ol li div:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.koshik_footer{
+    text-align: center;
+    font-size: 25px;
+    border-top: 2px solid gold;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* padding: 0px 5px; */
+}
+
+.koshik_buy{
+    align-items: center;
+    font-size: 27px;
+    height: 40px;
+    border-top: 2px solid gold;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 5px;
+}
+
+.koshik_buy_food:hover{
+    color:springgreen;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.koshik_buy_middle{
+    margin-left: 8px;
+    width: 0px;
+    height: 40px;
+    border: 1px solid gold;
+}
+
+.koshik_delivery:hover{
+    color:springgreen;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.select{
+    border: 3px solid gold;
+    border-radius: 10px;
+    padding: 0;
+    list-style-type: none;
+    /* list-style-type:disc; */
+    position:absolute;
+    right:25px;
+    top:100px;
+
+    background-color:crimson;
+    /* width: 218x; */
+}
+
+.select p{
+    padding: 0px 5px;
+    /* text-decoration: underline; */
+    margin: 0;
+    text-align: center;
+    /* color:rgb(203, 155, 35); */
+    font-size: 36px;
+    /* width: 10%;
+    border: 1px solid black; */
+}
+
+.select a:hover{
+    color:springgreen;
+    /* text-decoration: underline; */
+}
+
+.select a::before{
+    content: "‣";
+    font-size: 32px;
+}
+
+.select p a{
+    color:gold;
+    width: 10%;
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    /* text-decoration: none; */
+}
+
+
+.full_menu_space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.503);
+    /* opacity: 0.3; */
+    /* display: none; */
+    z-index: 11;
+    position: fixed;
+    top:0;
+    right:0;
+    
+}
+
+.booking_menu{    
+    overflow: auto;
+    width:28%;
+    height: 65vh;
+    z-index: 12;
+    border: 7px solid rgba(251, 255, 0, 0.8);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.booking_exit{
+    padding-left: 1.5px;
+    padding-top: 1px;
+    background-color: white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.732);
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.732);
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.booking_exit:hover{
+    cursor: pointer;
+    background-color:rgb(255, 179, 176);
+}
+
+.booking_body{
+    /* background-image: url(images/Pictures/stolik.jpg);
+    height: 70%;
+    width: 100%;
+    background-repeat: no-repeat; */
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color:rgb(255, 217, 191); */
+    background-color: bisque;
+}
+
+.booking_body p{
+    padding-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color:rgb(58, 57, 57);
+    /* color:rgb(193, 147, 32) */
+}
+
+.booking_menu_form{
+    text-align: center;
+}
+
+.cursor:hover{
+    cursor: pointer;
+}
+
+.booking_menu_form section{
+    padding-top:10px;
+    border-top: 1px solid white;
+}
+
+.booking_menu_form input{
+    /* border:0; */
+    border-radius: 3px;
+    width: 60%;
+    margin-top:10px;
+    padding-top:10px;
+    font-size: 15px;
+}
+
+#bok_kyiv,#bok_od{
+    width: 5px;
+}
+
+.full_menu_delivery_space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.503);
+    /* opacity: 0.3; */
+    /* display: none; */
+    z-index: 13;
+    position: fixed;
+    top:0;
+    right:0;
+    
+}
+
+.menu_delivery{
+    width:38%;
+    height: 65vh;
+    /* z-index: 13; */
+    border: 7px solid rgba(251, 255, 0, 0.8);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    background-color:blanchedalmond;
+}
+
+.menu_delivery_exit{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.732);
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.732);
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.menu_delivery_exit:hover{
+    cursor: pointer;
+    background-color:rgb(255, 179, 176);
+}
+
+.delivery_form{
+    text-align: center;
+}
+
+.delivery_form input:not(#delivery_feedback){
+    width: 70%;
+}
+
+.full_menu_buy_space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.503);
+    /* opacity: 0.3; */
+    /* display: none; */
+    z-index: 13;
+    position: fixed;
+    top:0;
+    right:0;
+    
+}
+
+.card,.cash{
+    text-align: center;
+}
+
+.buying_body p{
+text-align: center;
+}
+
+.menu_buy{
+    overflow: auto;
+    width:25%;
+    height: 40vh;
+    /* z-index: 13; */
+    border: 7px solid rgba(251, 255, 0, 0.8);
+    border-radius: 10px;
+    background-color: bisque;
+    position: relative;
+}
+
+.menu_buy_exit{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.732);
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.732);
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.menu_buy_exit:hover{
+    cursor: pointer;
+    background-color:rgb(255, 179, 176);
+}
+
+.buy_form{
+    text-align: center;
+}
+
+/* text-align:center задавать у родительского класса (если нужна фотка по центру) */
+/* надо бы в начле работы для всех блоков убрать margin и padding */
+h1{
+    text-align: center;
+    color:rgb(203, 155, 35);
+    font-size: 80px;
+    margin-top:50px;
+    margin-bottom: 65px;
+    /* border-bottom: 1px solid rgb(203, 155, 35); */
+    /* text-decoration: underline; */
+}
+
+/* ul:not(#breakfast){
+    margin-top: 200px;
+} */
+
+.name_of_food{
+    text-align: center;
+    color:rgb(203, 155, 35);
+    font-size: 70px;
+    /* margin-top:90px; */
+    margin-bottom: 40px;
+    text-decoration: underline;
+    /* background-color: rgb(255, 236, 207);
+    position: sticky;
+    top:125px */
+}
+
+.top_name{
+    margin-top:40px;
+}
+
+ul{
+    padding: 0px;
+    /* !!!, чтобы не было отсупа вправо из-за невидимого маркера спика */
+}
+
+ul li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 120px; 
+}
+
+ul li:last-of-type{
+    margin-bottom: 100px;
+}
+
+ul li div{
+    border: 1.5px solid rgb(203, 155, 35);
+    /* width:60%; */
+    width: 1100px;
+    height: 203px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.food_photo{
+    /* width: 25%; */
+    width:300px;
+    height: 200px;
+}
+
+.food_text{
+    /* width:45%; */
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    font-size: 42px;
+    color: rgb(203, 155, 35);
+    /* text-shadow: -1px -1px 0px #73590b; */
+    font-weight:bold;
+}
+
+.food_name{
+    margin: 0;
+    height: 136px;
+    border-bottom:1.5px solid rgb(203, 155, 35);
+    padding-top:30px;
+}
+
+.food_type{
+    margin: 0;
+    height: 77px;
+    border-top:1.5px solid rgb(203, 155, 35);
+    padding: 0;
+}
+
+.choose_food_type{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.choose_food_type span{
+  color: rgb(203, 155, 35);
+  font-weight: bold;
+  font-size: 24px;
+  display:flex;
+  /* z-index: 1; */
+}
+
+.choose_food_type span label:hover{
+    cursor: pointer;
+}
+
+.choose_food_type span input:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.choose_food_type span input{
+    transform: scale(0.8);
+}
+
+.two_types_column{
+    flex-direction: column;
+    align-items: center;
+}
+
+.two_types_row{
+   padding-top: 11px; 
+}
+
+
+.input_food{
+    z-index: -1;
+    padding-top: 3px;
+    padding-right: 1px;
+}
+
+.food_buy{
+    width:300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy{
+    margin: 0;
+    height: 137px;
+    border-bottom:1.5px solid rgb(203, 155, 35);
+    text-align: center;
+    font-size: 27px;
+    color:rgb(203, 155, 35);
+}
+
+/* .buy span{
+    font-size: 27px;
+    color:rgb(203, 155, 35);
+} */
+
+.price{
+    margin: 0;
+    height: 63px;
+    border-top:1.5px solid rgb(203, 155, 35);
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+   font-size: 27px;
+   color:rgb(203, 155, 35);
+   font-weight: bold;
+}
+
+.buy:hover{
+    background-color: rgb(254, 246, 177);
+    background-color: rgb(255, 233, 144); 
+    /* ??? */
+    cursor: pointer;
+    color:rgb(250, 14, 175);
+}
+
+.buy:active{
+    background-color:rgb(255, 232, 128);
+}
+
+/* .food_photo:hover{
+    transform: scale(2);
+} */
+
+.go_top{
+    /* margin-top: 130px; */
+    display: flex;
+    justify-content: center;
+}
+
+.go_top p:hover{
+    background-color: pink;
+}
+
+.go_top p{
+    background-color:rgb(226, 188, 135);
+    border-radius: 30px;
+    width: 210px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0; 
+    color:rgb(255, 246, 209);
+    font-size: 36px;
+}
+
+footer{
+    background-color:rgb(226, 188, 135);
+    color:rgb(255, 246, 209);
+    /* margin-top: 150px; */
+    margin-top: 5px;
+    display:flex;
+    justify-content: space-between;
+    padding-top: 1.5vh;
+}
+
+.kyiv_rest{
+    padding-left: 27px;
+    /* text-align: right; */
+}
+
+.odesa_rest{
+    /* padding-right: 26px; */
+    padding-left: 10px;
+}
+
+.footer_center{
+    font-size: 25px;
+    /* width:32%; */
+    /* width:600px; */
+    text-align: center;
+    font-family: Cochin;
+}
+
+.footer_kyiv_name{
+    margin-right:30px;
+    margin-left: 10px;
+    font-size: 23px;
+    width:833px;
+    font-family: Cochin;
+    text-align: center;
+}
+
+.footer_odesa_name{
+    margin-right: 30px;
+    margin-left:26px;
+    font-size: 23px;
+    width:233px;
+    font-family: Cochin;
+    text-align: center;
+}
+
+.footer_phones{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer_phones a{
+    text-decoration:none;
+    color:rgb(255, 246, 209);
+    border:2px solid rgb(255, 244, 193);
+    border-radius: 10px;
+    font-size:23px;
+}
+
+.footer_phones a:hover{
+    background-color:rgb(146, 213, 104);
+}
+
+.phone:before {
+    content: "\260e";
+    /* margin-right: 0.5em; */
+  }
+
+  .mail{
+   padding-top:4px;
+  }
+
+footer div img:not(.desire_img_footer){
+    border: 2.5px solid rgb(45, 236, 12);
+    border-radius: 30px;
+    /* height: 18vh; */
+    width: 90%;
+}
+
+/* сделать для каждой еды radio - выбор вида еды (клубничный/шоколадный/ маленький/ большой/1/2 */
+
+/* у p большие margin */
+/* вертикалные блоки - flex-direcion:column */
+
+
+/* 1366 */
+/* 428 */
+/* 480px */
+/* 320px */
+
+
+@media all and (max-width: 580px){
+
+.buy{
+    width: 100%;
+    border: none;
+    border:none;
+    border-top:1.5px solid rgb(203, 155, 35);
+}
+
+.food_buy{
+    width:50px;
+}
+
+.buy img{
+    display: none;
+}
+
+/* .price,.food_buy{ */
+    /* border: 1px solid black; */
+   /* justify-content: end; */
+/* } */
+
+.food_buy{
+    border:none;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom:30px;
+}
+
+.price span:not(.full_price,.money){
+    display: none;
+}
+
+.food_text,.food_name{
+width: 100%;
+height: 100px;
+font-size: 30px;
+padding: 0;
+word-wrap: break-word;
+border-bottom: none;
+}
+
+.food_text{
+    border: 0;
+}
+
+.food_name{
+    width: 75%;
+    padding-left: 40px;
+}
+
+.food_photo{
+    border-top: 0;
+    border-right: 0;
+    width: 60px;
+    height: 38px;
+    z-index: 9;
+    position: absolute;
+    right: 0;
+}
+
+.food_photo img{
+    /* z-index: 9; */
+    width:60px;
+    height: auto;
+}
+
+.phone_menu_food li{
+    /* margin:40px 20px; */
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.phone_border{
+    position: relative;
+    height: 240px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* .food_type{
+    width: 100%;
+} */
+
+
+
+
+
+
+.kyiv_rest, .odesa_rest,.footer_kyiv_name,.footer_odesa_name,.footer_center,.footer_phones{
+    display: none;
+}
+
+.food_photo:hover{
+    /* transform: scale(1); */
+    cursor: pointer;
+}
+
+.full_photo{
+    position: fixed;
+    right: 40%;
+    top: 40%;
+    transform: scale(5);
+}
+
+
+.esire{
+    padding-top:20px;
+    display:block;
+}
+
+.esire img{
+    margin-left: -10px;
+}
+
+.desire{
+    display: none;
+}
+
+.header_menu{
+    height:100px;
+}
+
+.header_menu div{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo_main_menu{
+    display: flex;
+}
+
+.logo_main_menu a img{
+    width:100px;
+}
+
+.esire a img{
+    margin-left: -15px;
+    width: 140px;
+}
+
+.spisok_button{
+   margin-top: 10px;
+}
+
+.spisok_button img{
+    width: 75px;
+}
+
+h1{
+    margin-top: 10px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.kiev{
+    display: none;
+}
+
+.phone_kiev{
+    display: block;
+    width: 100px;
+}
+
+.odessa{
+    display: none;
+}
+
+.space{
+    display: block;
+    width: 100%;
+}
+
+.phone_odessa{
+    display: block;
+    width: 100px;
+}
+
+.padding_l{
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding:0;
+}
+
+.padding_r{
+    display: block;
+    height: 50px;
+    width: 60px;
+    padding:0;
+}
+
+.choose_name{
+    display: none;
+}
+
+.top_name{
+    margin-top:0;
+    margin-bottom: 10px;
+}
+
+.fone_choose{
+    height: 50px;
+    border-bottom: 1px solid rgb(203, 155, 35);
+}
+
+.arrows{
+    display: none;
+}
+
+.select{
+    top:25px;
+    right: 2px;
+}
+
+.select p{
+    font-size: 23px;
+}
+
+.koshik_tovarov{
+    width: 170px;
+    height: 458px;
+    top:51px;
+    left:2px;
+}
+
+.koshik_tovarov ol{
+    font-size: 22px; 
+    /* height: 552px;
+    width: 226px; */
+    height: 360px;
+}
+
+.koshik_buy{
+    font-size:20px;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.koshik_footer{
+    font-size:20px;
+}
+
+.koshik_buy_food{
+width: 65px;
+}
+
+.koshik_delivery{
+    width: 85px;
+}
+
+.menu_buy{
+    width: 60%;
+    height: 60vh;
+    overflow: auto;
+}
+
+.menu_delivery{
+    width: 60%;
+    height: 70vh;
+    overflow: auto;
+}
+
+.booking_menu{
+    width: 60%;
+    height: 70vh;
+    overflow: auto;
+}
+
+.name_of_food{
+    font-size: 55px;
+}
+
+.desire_footer{
+    display:block;
+    text-align: center;
+    border: 0;
+}
+
+.desire_img_footer{
+    width: 100%;
+}
+
+}
+
+
+
+
+
+@media all and (min-width:581px) and (max-width: 1366px){
+
+.kyiv_rest, .odesa_rest,.footer_kyiv_name,.footer_odesa_name,.footer_center,.footer_phones{
+        display: none;
+    }
+
+.kiev{
+    display: none;
+}
+
+.phone_kiev{
+    display: block;
+    width: 100px;
+}
+
+.odessa{
+    display: none;
+}
+
+
+.phone_odessa{
+    display: block;
+    width: 100px;
+}
+
+.padding_l{
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding:0;
+}
+
+.padding_r{
+    display: block;
+    height: 60px;
+    width: 60px;
+    padding:0;
+}
+
+.choose_name{
+    display: none;
+}
+
+.top_name{
+    margin-top:0;
+    margin-bottom: 10px;
+}
+
+.fone_choose{
+    height: 60px;
+    border-bottom: 1px solid rgb(203, 155, 35);;
+}
+
+.arrows{
+width: 100%;
+justify-content: center;
+}
+
+.arrows img{
+    height: 40px;
+}
+
+.esire{
+    padding-top:20px;
+    display:block;
+}
+
+/* .esire a img{
+    margin-left: -10px;
+    width: 150px;
+} */
+
+.desire{
+    display: none;
+}
+
+.header_menu{
+    justify-content: space-around;
+    height:100px;
+}
+
+.header_menu div{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo_main_menu{
+    display: flex;
+}
+
+.logo_main_menu a img{
+    width:100px;
+}
+
+.esire a img{
+    margin-left: -15px;
+    width: 140px;
+}
+
+.spisok_button{
+   margin-top: 10px;
+}
+
+.spisok_button img{
+    width: 75px;
+}
+
+.select{
+    top:35px;
+    right: 2px;
+}
+
+.select p{
+    font-size: 30px;
+}
+
+.koshik_tovarov{
+    width: 200px;
+    height: 475px;
+    top:61px;
+    left:2px;
+}
+
+.koshik_tovarov ol{
+    font-size: 22px; 
+    /* height: 552px;
+    width: 226px; */
+    height: 370px;
+}
+
+.koshik_buy{
+    font-size:23px;
+    width: 190px;
+    justify-content: space-between;
+}
+
+.koshik_footer{
+    font-size:23px;
+}
+
+.koshik_buy_food{
+width: 75px;
+}
+
+.koshik_delivery{
+    width: 95px;
+}
+
+.menu_buy{
+    width: 60%;
+    height: 60vh;
+    overflow: auto;
+}
+
+.menu_delivery{
+    width: 60%;
+    height: 70vh;
+    overflow: auto;
+}
+
+.booking_menu{
+    width: 60%;
+    height: 70vh;
+    overflow: auto;
+}
+
+.name_of_food{
+    font-size: 55px;
+}
+
+.desire_footer{
+    display:block;
+    text-align: center;
+    border: 0;
+}
+
+.desire_img_footer{
+    width: 100%;
+}
+
+h1{
+    margin-top: 10px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.phone_menu_food li{
+    margin-bottom: 95px;
+}
+
+.food_text{
+    width:30%;
+    text-align: start;
+    /* height: 250px; */
+    border: 1.5px solid rgb(203, 155, 35);
+    border-left: 2.5px solid rgb(203, 155, 35);
+    border-bottom: 2.5px solid rgb(203, 155, 35);
+}
+
+.food_name{
+    word-wrap: break-word;
+    font-size: 26px;
+    padding: 0;
+    border-bottom: 1px solid rgb(203, 155, 35);
+    border-left: 1px solid rgb(203, 155, 35);
+    text-align: center;
+    /* height: 80px; */
+    /* border: 0; */
+    height: 69px;
+    width: 210px;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+
+.food_type{
+    border-top: 0;
+    height: auto;
+}
+
+.choose_food_type span{
+    font-size:20px;
+}
+
+.food_buy{
+    width:100%;
+    /* display: none; */
+    border: 2px solid rgb(203, 155, 35);
+}
+
+.buy img{
+    width: 50px;
+}
+
+.food_photo{
+    width:205px;
+    height: 130px;
+    border-bottom: 3px solid rgb(203, 155, 35);
+}
+
+.food_photo img{
+    width:205px;
+    height: 130px;
+}
+
+.phone_border{
+    margin: 0 30px;
+    justify-content: center;
+    /* border: none; */
+    /* width:max-content; */
+    position: relative;
+}
+
+.price span:not(.full_price,.money){
+    display: none;
+}
+
+.price{
+    /* border-top: 1.5px solid rgb(203, 155, 35); */
+    border-bottom: 1px solid rgb(203, 155, 35);
+    padding-top:10px;
+    text-align: center;
+}
+
+.food_photo:hover{
+    /* transform: scale(1); */
+    cursor: pointer;
+}
+
+.full_photo{
+    position: fixed;
+    right: 40%;
+    top: 40%;
+    transform: scale(3);
+    z-index: 9;
+}
+}
+
+
+@media all and (min-width:1367px) {
+ .food_photo:hover{
+        transform: scale(2);
+ }
+}
+
+@media all and (max-width:380px) {
+.food_name{
+    padding-left: 15px;
+}
+}
+
+/* если в id ="текст " пробел в конце, то он тоже считается за id */
+
+

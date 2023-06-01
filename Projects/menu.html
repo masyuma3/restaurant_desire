@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="menu_style.css">
+    <title>Menu</title>
+</head>
+
+<body>
+  
+    
+    <div class="header_menu">
+
+        <div class="logo_main_menu">
+            <a href="index.html">
+                <img src="images/Logos/main_logo/menu_l.png" alt="Logo">
+            </a>
+
+           
+            <div class="esire disp_menu">
+                <a href="index.html">
+                <img src="images/Logos/main_logo/esire2.png" alt="" width="145px">
+            </a>
+            </div>
+         
+        </div>
+
+
+        <div class="desire">
+            <img src=images/Food/desire.png width="90%" >
+        </div>
+
+        <div class="spisok_button">
+            <img onclick="open_booking()" src=images/Icons/reservation.png width="100px">
+        </div>
+
+    </div>
+
+
+
+
+ <div class="fone_choose">
+
+    <div class="koshik_tovarov disp_menu" id="koshik_tovariv">
+            <ol id="koshik_spisok">
+                <!-- <li class="disp_menu">sgddsdgg <div class="koshik_tovarov_delete">✕</div></li>
+                <li>sgsd <div class="koshik_tovarov_delete">✕</div></li>
+                <li>adfh <div class="koshik_tovarov_delete">✕</div></li>
+                <li>adfh <div class="koshik_tovarov_delete">✕</div></li> -->
+
+                <!-- <li>adfh <div>✕</div></li>
+                <li>adfh <div>✕</div></li>
+                <li>adfh <div>✕</div></li>
+                <li>adfh <div>✕</div></li>
+                <li>adfh <div>✕</div></li>
+                <li>adfh <div>✕</div></li>
+                <li>adfh <div>✕</div></li> -->
+
+                </ol>
+ 
+            <div class="koshik_footer">
+                <div>Загальна сума:</div>
+                <div>
+                    <span id="full_price">0</span> грн</div>
+            </div>
+
+            <div class="koshik_buy">
+                <div class="koshik_buy_food" onclick="menu_open_buy(); buy_check()">Купити</div>
+                <div class="koshik_buy_middle"></div>
+                <div class="koshik_delivery" onclick="menu_open_delivery()">Доставка</div>
+            </div>
+   
+    </div>     
+
+
+        <div class="choose_borders">
+            <img onclick="open_koshik()" src=images/Icons/koshik2.png width="120px" class="padding_l">
+        </div>
+
+        <div class="center_menu">
+            <div class="choose_title">
+                <p class="choose_rest choose_name">Ваш ресторан:</p>
+            </div>      
+            
+            <div class="choose_rest_block">
+                <form>
+
+                    <div class="choose_input"> 
+                        <input type="radio" onclick="choose_rest()"
+                        id="kyiv_rest" name="choose_restaurant" checked>
+                    </div>
+
+                        <p class="choose_rest"> 
+                            <label for="kyiv_rest" class="kiev">
+                                Київ, бульвар Шевченка 11а
+                            </label> 
+                            <label for="kyiv_rest" class="phone_kiev disp_menu">
+                                Київ
+                            </label> 
+                        </p>
+
+                        <div class="space disp_menu">
+
+                        </div>
+
+                        <div class="choose_borders arrows">
+                        <a href="#"> 
+                            <img src="images/Buttons/top_.png" height="50px">
+                        </a>  
+
+                        <a href="#no-alcohol"> 
+                            <img src="images/Buttons/drinks.png" height="50px">
+                        </a> 
+
+                        <a href="#footer"> 
+                            <img src="images/Buttons/down_.png" height="50px">
+                        </a> 
+                        </div>
+
+                        <div  class="choose_input">
+                            <input type="radio" id="odesa_rest" name="choose_restaurant" onclick="choose_rest()">
+                        </div>
+
+                        <p class="choose_rest">
+                            <label for="odesa_rest" class="odessa">
+                                Одеса, Набережна вулиця 12б
+                            </label> 
+                            <label for="odesa_rest" class="phone_odessa disp_menu">
+                                Одеса
+                            </label> 
+                        </p>
+                
+                </form>
+            </div>
+        </div>
+
+
+        <div class="choose_borders">
+            <img onclick="open_spisok()" src="images/Icons/menu_yellow.png" width="120px" class="padding_r">
+        </div>
+
+        <ol class="select disp_menu" id="spisok_navigation">
+            <li>
+              <p><a href="#breakfast" class="linkers_none" id="scroll_breakfast">Сніданки</a></p>
+          </li> 
+    
+            <li>
+              <p><a href="#salads" class="linkers_none" id="scroll_salads">Салати</a></p>
+          </li>  
+    
+            <li>
+              <p><a href="#soups" class="linkers_none" id="scroll_soups">Супи</a></p>
+          </li>  
+    
+            <li>
+              <p><a href="#pizza" class="linkers_none" id="scroll_pizza">Піца</a></p>
+          </li>  
+    
+            <li>
+              <p><a href="#garnish" class="linkers_none" id="scroll_garnish">Гарніри</a></p>
+          </li>  
+    
+            <li>
+              <p><a href="#meat" class="linkers_none" id="scroll_meat">М'ясні страви</a></p>
+          </li>  
+    
+            <li>
+              <p><a href="#fish" class="linkers_none" id="scroll_fish">Рибні страви</a></p>
+          </li>  
+    
+            <li>
+              <p><a href="#desserts" class="linkers_none" id="scroll_desserts">Десерти</a></p>
+          </li>  
+    
+            <li>
+              <p><a href="#no-alcohol" class="linkers_none" id="scroll_no_alcohol">Безалкогольні<br>напої</a></p>
+          </li> 
+    
+            <li>
+               <p> <a href="#alcohol" class="linkers_none" id="scroll_alcohol">Алкогольні<br>напої</a></p>
+          </li> 
+      </ol>
+    </div> 
+
+
+
+<div class="disp_menu" id="full_menu_space">
+    <div class="booking_menu" id="booking_menu">
+            <div class="booking_exit" id="booking_exit">
+                ✕
+            </div>
+            <div class="booking_body">
+                <p>Бронювання<br>столика</p>
+
+                <form action="" name="booking_menu_form" class="booking_menu_form" onsubmit="bok_form(event)">
+       <section>1. Оберіть місто, в якому находиться заклад:</section>
+
+                    <input type="radio" name="rest" id="bok_kyiv" checked>
+                    <label for="bok_kyiv" style="padding-right: 40px;">Київ</label>
+                   
+
+
+           
+              
+                    <input type="radio" name="rest" id="bok_od">
+                    <label for="bok_od">Одеса</label>
+  
+  
+<br>
+          <section>2. Введіть Ваше ім'я:</section>
+                     <input type="text" placeholder="Ім'я" required>
+       
+<br>
+<section>3. Введіть Вашe прізвище:</section>
+                    <input type="text" placeholder="Прізвище" required>
+                
+<br>
+<section>3. Введіть Ваш номер телефону:</section>
+                    <input type="tel" placeholder="0987654321" required pattern="[0-9]+" title="Вводіть лише цифри">
+
+<br>
+<section>4. Введіть Ваш email:</section>
+            <input type="email" placeholder="desireua@gmail.com">
+<br>
+<section>5. Оберіть дату та час, на яку Вам необхідно забронювати стіл:</section>
+            <input type="datetime-local" required>
+
+<br>
+<section>6. Якщо це відомо, то надайте, будь-ласка інформацію, скільки буде людей:</section>
+            <input type="number">
+
+<br>
+<section>7. Ви можете залиши коментарі (за потреби):</section>
+            <input type="text">
+                
+<br>
+                    <input type="submit" value="Підтвердити" class="cursor" onclick>
+
+                </form>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="disp_menu" id="full_menu_delivery_space">
+    <div class="menu_delivery" id="menu_delivery">
+        <div class="menu_delivery_exit" id="menu_delivery_exit">
+            ✕
+        </div>
+<div style="text-align: center;">Оформлення замолвеня:<br>(Доставка здійснюється лише по Києву!)</div>
+
+<form action="" name="delivery_form" class="delivery_form">
+    <input type="text" placeholder="Ім'я" required>
+<br>
+    <input type="text" placeholder="Прізвище" required>
+<br>
+    <input type="tel" placeholder="Номер телефону" required pattern="[0-9]+" title="Вводіть лише цифри">
+<br>
+    <input type="email" placeholder="Email">
+<br>    
+    <input type="text" value="Місто: Київ" readonly>
+    <!-- город -->
+<br>  
+    <input type="text" placeholder="Вулиця" required>
+<br> 
+    <input type="text" placeholder="Будинок" required>
+<div style="text-align: center;"> Не обов'язкова інформація:</div>
+    <input type="text" placeholder="Корпус">
+<br> 
+    <input type="number" placeholder="Номер квартири">
+<br>   
+    <input type="number" placeholder="Під'їзд">
+<br> 
+    <input type="number" placeholder="Поверх">
+<br> 
+    <input type="text" placeholder="Код домофону">
+<br> 
+    <input type="text" placeholder="Коментарі">
+<br> 
+<!-- необязательніе поля виделить цветом -->
+    <input type="checkbox" id="delivery_feedback">
+    <label for="delivery_feedback">обов'язково зв'язатися зі мною</label>
+<br> 
+    <input type="submit" value="Замовлення підтверджую">
+</form>
+
+<!-- <img src="images/Icons/star.png" class="stars" width="15px"> -->
+
+    </div>
+</div>
+
+
+
+<div class="disp_menu" id="full_menu_buy_space">
+    <div class="menu_buy" id="menu_buy">
+        <div class="menu_buy_exit" id="menu_buy_exit">
+            ✕
+        </div>
+        <div class="buying_body">
+            <p style="margin-bottom: 0px;">Оформлення замовлення</p>
+
+<p style="margin-bottom: 0;margin-top: 5px;">1. Оплата буде:</p>
+            <form action="" name="buying_form" class="buy_form">
+            <input type="radio" name="pay" checked id="card" onclick="buy_check()">
+       <label for="card">Карткою</label>
+<br>
+       <input type="radio" name="pay" id="cash" onclick="buy_check()">
+       <label for="cash">Готівкою</label>
+<br class="cash">
+<div class="cash" style="margin-top:10px">2. Яку решту варто взяти кур'єру?</div>
+                <input type="number" placeholder="решта з" class="cash">
+<br class="card">
+<div class="card" style="margin-top:10px">2. Введіть номер картки:</div>
+                 <input type="text" pattern="\d{16}" class="card" placeholder="0000 0000 0000 0000">
+            <!-- или patter="[0-9]*" maxlenth="16" -->
+<br class="card">
+<div class="card" style="margin-top:10px">3. Введіть CVV номер картки:</div>
+                <input type="number" pattern="\d{3}" class="card" placeholder="000">
+<br class="card"> 
+<div class="card" style="margin-top:10px">4. Введіть дату з Вашої картки:</div>
+                <input type="month" class="card">
+<br class="cash"> 
+                <input type="submit" value="Замовити" class="cash">
+<br class="card"> 
+                <input type="submit" value="Сплатити" class="card">
+
+            </form>
+<div class="cash">Загальна сума: <span id="buying_price"></span> грн</div>
+<!-- <div>Номер замовлення: <span> </span></div> -->
+        </div>
+
+        <div class="card">
+            Загальна сума замолвення:
+ <span id="buy_price">
+
+ </span>
+ грн
+        </div>
+    </div>
+</div>
+<!-- readonly-не можна изменить, value=значение, что уже будет введено  title-подсказка при наведении-->
+
+
+    <h1 id="breakfast">
+    Меню ресторану Desire
+    </h1>
+
+<div class="name_of_food top_name" id="breakfast_name">Сніданки</div>
+
+<ul class="phone_menu_food">
+    
+    <li>
+        <!-- class="odesa_only" или class="kyiv_only" для эл li -->
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/breakfast/croissant.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+Круасан
+                </p>
+
+             <section class="food_type">
+                <form class="choose_food_type">
+
+                    <span>
+                          <span class="input_food">
+                             <input type="radio" id="strawberry_croissant" name="choose_croissant">
+                          </span>
+                        <label for="strawberry_croissant">З полуничною начінкою</label>
+                    </span>
+
+                    <span>
+                         <span class="input_food">
+                              <input type="radio" id="chocolate_croissant" name="choose_croissant">
+                         </span>
+                       <label for="chocolate_croissant">З шоколадною начінкою</label>
+                    </span>
+
+                    <span>
+                         <span class="input_food">
+                              <input type="radio" id="simple_croissant" name="choose_croissant" checked>
+                         </span>
+                        <label for="simple_croissant">Без начінки</label>
+                    </span>
+
+                </form>
+             </section>
+
+            </div>
+
+            <div class="food_buy">
+                <p class="buy" onclick="add_el(this)">
+                   <span><b>Додати у кошик</b></span> 
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price" id="pop1">
+                    <span>Ціна:</span>
+                    <span class="full_price">
+                        <span class="money">
+                            50.00
+                        </span> 
+                        грн / 2 од.
+                    </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/breakfast/pancakes2.jpg height="200px" width="300px"   onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+              Млинці з нутеллою
+                </p>
+
+                <section class="food_type">
+
+                 </section>
+    
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price">
+                        <span class="money">42.45</span> грн / 3 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="odesa_only">
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/breakfast/fried-eggs.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Яєчня
+                </p>
+
+                <section class="food_type">
+
+                 </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 35.00</span> грн / 1 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/breakfast/omlet.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Омлет
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                   
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 40.00</span> грн / 1 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/breakfast/sirniki.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                   Сирники
+                </p>
+
+                <section class="food_type">
+                     <form class="choose_food_type two_types_row">
+    
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="jem_sirniki" name="sirniki" checked>
+                              </span>
+                            <label for="jem_sirniki">З джемом</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="sg_sirniki" name="sirniki">
+                             </span>
+                            <label for="sg_sirniki">Зі згущеним молоком</label>
+                        </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy"  onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 89.00</span> грн / 4од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/food/cerals.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Мюслі з молоком
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy"  onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price"  id="rec_1">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 59.00</span> грн</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/breakfast/pancakes.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Оладки
+                </p>
+
+                <section class="food_type" id="salads">
+                    <form class="choose_food_type two_types_row">
+    
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="jem_ol" name="oladi" checked>
+                              </span>
+                            <label for="jem_ol">З медом</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="sg_ol" name="oladi">
+                             </span>
+                            <label for="sg_ol">Зі згущеним молоком</label>
+                        </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy"  onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 45.00</span> грн / 3 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="salads_name">Салати</div>
+
+<ul  class="phone_menu_food">
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/salads/grecheskiy.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Грецький салат
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 140.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/salads/rukoli.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Салат з руколи
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 175.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/salads/cezar3.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Салат Цезар
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 210.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/salads/olivye-1.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Салат Олів'є
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 285.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/salads/carpaco.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Карпачо
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 220.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li  class="odesa_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/salads/vinegred.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Салат вінегрет
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 170.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/salads/tartar5a.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Тартар з лососем
+                </p>
+
+                <section class="food_type" id="soups">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money">280.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="soups_name">Супи</div>
+
+<ul  class="phone_menu_food">
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/soups/borscht.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Борщ
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 120.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/soups/green2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Борщ зелений
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 140.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li  class="odesa_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/soups/harcho.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Суп харчо
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 160.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/soups/ovochnoy2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Суп овочевий
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 150.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/soups/soup1.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Бульйон курячий
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 85.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/soups/tikva1.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Гарбузовий крем-суп
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 80.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/soups/gorohoviy2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Гороховий крем-суп
+                </p>
+
+                <section class="food_type" id="pizza">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 75.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="pizza_name">Піца</div>
+
+<ul class="phone_menu_food">
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/pizza/karbonara.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Піца Карбонара
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price"  id="pop2">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 330.00</span> грн /550г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/pizza/margarita.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                   Піца Маргарита
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 290.00</span> грн /480г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/pizza/peperoni1.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                   Піца Пепероні
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 262.00</span> грн /470г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/pizza/4_chease_2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Піца Чотири сири
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price" id="sales_2">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money">324.00 </span> грн /530г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/pizza/gavayskaya.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                   Піца Гавайська
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 215.00</span> грн /480г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li  class="odesa_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/pizza/neapoli.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Піца Неаполітанська
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 340.00</span> грн /520г </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/pizza/diablo.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Піца Діабло
+                </p>
+
+                <section class="food_type" id="garnish">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 310.00</span> грн /500г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="garnish_name">Гарніри</div>
+
+<ul class="phone_menu_food">
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/garnish/grilled_veg.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Овочі гриль
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 280.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/garnish/pure.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Пюре картопляне
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price" id="pop3">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 70.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/garnish/garnish1.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Картопля фрі
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 90.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/garnish/baked_p.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Картопля запечена
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price" id="rec_4">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 100.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li  class="odesa_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/garnish/rise2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Рис паровий
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 95.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/garnish/pasta.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Паста
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type two_types_column">
+    
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="chicken_sous" name="chicken">
+                              </span>
+                            <label for="chicken_sous">З соусом</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="chicken_no_sous" name="chicken" checked>
+                             </span>
+                            <label for="chicken_no_sous">Без соусу</label>
+                        </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 110.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/garnish/grechka2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Каша гречнева
+                </p>
+
+                <section class="food_type" id="meat">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 65.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="meat_name">М'ясні страви</div>
+
+<ul class="phone_menu_food">
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/meat/stake2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Стейк 
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 425.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/meat/shashlik.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Шашлик
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type">
+
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="pork" name="choose_shashlik">
+                              </span>
+                            <label for="pork">Зі свинини</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="kurka" name="choose_shashlik">
+                             </span>
+                           <label for="kurka">З курки</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="gavyadina" name="choose_shashlik" checked>
+                             </span>
+                            <label for="gavyadina">З телятини</label>
+                        </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price" id="sales_3">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 320.00</span> грн /200г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/meat/kare.jpeg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Каре ягняти
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 290.00</span> грн / 3 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/meat/burger.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Бургер
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 300.00</span> грн</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/meat/naggetsy.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Курячі нагетси
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 185.00</span> грн / 8 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/meat/kotleta_kyiv_3.webp height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                   Котлета по-київськи
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 115.00</span> грн / 2 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/meat/kotleta.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Котлета з яловичини
+                </p>
+
+                <section class="food_type" id="fish">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 65.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="fish_name">Рибні страви</div>
+
+<ul class="phone_menu_food">
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/fish/losos.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Стейк із лосося
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price" id="pop4">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 400.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li  class="odesa_only"> 
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/fish/sibas.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Дикий сібас
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 420.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li  class="odesa_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/fish/korop.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Короп запечений
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 319.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/fish/krevetki3.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Креветки у паніровці
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 219.00</span> грн / 8 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/fish/osminog.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Щупальця восьминога гриль
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 1300.00</span> грн / 350г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li  class="odesa_only">
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/fish/kalmar2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Кальмар на грилі
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 310.00</span> грн / 180г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/fish/pasta.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Паста з морепродуктами
+                </p>
+
+                <section class="food_type" id="desserts">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 430.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="desserts_name">Десерти</div>
+
+<ul class="phone_menu_food">
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/desserts/donut2.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Пончик
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type two_types_column">
+    
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="k_donut" name="donuts" checked>
+                              </span>
+                            <label for="k_donut">Полуничний</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="c_donat" name="donuts">
+                             </span>
+                            <label for="c_donat">Шоколадний</label>
+                        </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 40.00</span> грн / 1 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/desserts/ice3.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Морозиво
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type">
+
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="c_ice_cream" name="ice_cream" checked>
+                              </span>
+                            <label for="c_ice_cream">Шоколадне</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="s_ice_cream" name="ice_cream">
+                             </span>
+                           <label for="s_ice_cream">Полуничне</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="v_ice_cream" name="ice_cream">
+                             </span>
+                            <label for="v_ice_cream">Ванільне</label>
+                        </span>
+
+                        <span>
+                            <span class="input_food">
+                                 <input type="radio" id="f_ice_cream" name="ice_cream">
+                            </span>
+                           <label for="f_ice_cream">Фісташкове</label>
+                       </span>
+
+                       <span>
+                         <span class="input_food">
+                             <input type="radio" id="p_ice_cream" name="ice_cream">
+                        </span>
+                       <label for="p_ice_cream">Пломбір</label>
+                   </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 39.00</span> грн / 1 од.</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/desserts/tiramisu.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Тирамісу
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 110.00</span> грн</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/desserts/cheese_cake.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Чізкейк
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 144.00</span> грн / 160г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/desserts/fruits3.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Фруктовий салат
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price" id="sales_4">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 139.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/desserts/napoleon.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Торт Наполеон
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 90.00</span> грн / 260г</span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li class="kyiv_only">
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/desserts/cake.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                   Торт шоколадний
+                </p>
+
+                <section class="food_type" id="no-alcohol">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 270.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="no_alcohol_name">Безалкогольні напої</div>
+
+<ul class="phone_menu_food">
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/no-alcohol/water-2.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Вода
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type two_types_row">
+    
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="no_gas_water" name="water" checked>
+                              </span>
+                            <label for="no_gas_water">Негазована</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="gas_water" name="water">
+                             </span>
+                            <label for="gas_water">Газована</label>
+                        </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money">30.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/no-alcohol/tea.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Чай
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type two_types_row">
+    
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="black_tea" name="tea" checked>
+                              </span>
+                            <label for="black_tea">Чорний</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="green_tea" name="tea">
+                             </span>
+                            <label for="green_tea">Зелений</label>
+                        </span>
+
+                        <span>
+                            <span class="input_food">
+                                 <input type="radio" id="fruit_tea" name="tea">
+                            </span>
+                           <label for="fruit_tea">Фруктовий</label>
+                       </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 75.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/no-alcohol/coffe.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Кава
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type">
+
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="e_coffe" name="coffe" checked>
+                              </span>
+                            <label for="e_coffe"> Еспресо</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="k_coffe" name="coffe">
+                             </span>
+                           <label for="k_coffe">Капучино</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="a_coffe" name="coffe">
+                             </span>
+                            <label for="a_coffe">Американо</label>
+                        </span>
+
+                        <span>
+                            <span class="input_food">
+                                 <input type="radio" id="l_coffe" name="coffe">
+                            </span>
+                           <label for="l_coffe">Лате</label>
+                       </span>
+
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 55.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/no-alcohol/fresh2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Фреш соки
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type">
+
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="o_fresh" name="fresh" checked>
+                              </span>
+                            <label for="o_fresh"> Апельсиновий</label>
+                        </span>
+
+                        <span>
+                            <span class="input_food">
+                               <input type="radio" id="a_fresh" name="fresh">
+                            </span>
+                          <label for="a_fresh">
+                            Яблучний
+                          </label>
+                      </span>
+
+                      <span>
+                        <span class="input_food">
+                           <input type="radio" id="w_fresh" name="fresh">
+                        </span>
+                      <label for="w_fresh">
+                        Кавуновий
+                      </label>
+                  </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 90.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/no-alcohol/juice.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Сік в асортименті
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type">
+
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="o_juice" name="juice" checked>
+                              </span>
+                            <label for="o_juice"> Апельсиновий</label>
+                        </span>
+
+                        <span>
+                            <span class="input_food">
+                               <input type="radio" id="a_juice" name="juice">
+                            </span>
+                          <label for="a_juice">
+                            Яблучний
+                          </label>
+                      </span>
+    
+                      <span>
+                        <span class="input_food">
+                           <input type="radio" id="m_juice" name="juice">
+                        </span>
+                      <label for="m_juice">
+                        Мультифрукт
+                      </label>
+                  </span>
+
+                  <span>
+                    <span class="input_food">
+                       <input type="radio" id="t_juice" name="juice">
+                    </span>
+                  <label for="t_juice">
+                    Томатний
+                  </label>
+              </span>
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 50.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/no-alcohol/cola.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Кола
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type">
+
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="i_cola" name="cola" checked>
+                              </span>
+                            <label for="i_cola"> 
+                                З льодом
+                            </label>
+                        </span>
+
+                        <span>
+                            <span class="input_food">
+                               <input type="radio" id="ni_cola" name="cola">
+                            </span>
+                          <label for="ni_cola">
+                           Без льоду
+                          </label>
+                      </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 60.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/no-alcohol/lemonade.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Лимонад 
+                </p>
+
+                <section class="food_type" id="alcohol">
+                    <form class="choose_food_type">
+                    <span>
+                        <span class="input_food">
+                           <input type="radio" id="c_lemonade" name="lemonade" checked>
+                        </span>
+                      <label for="c_lemonade">
+                        Цитрусовий
+                      </label>
+                  </span>
+
+                    <span>
+                        <span class="input_food">
+                           <input type="radio" id="s_lemonade" name="lemonade">
+                        </span>
+                      <label for="s_lemonade">
+                        Полуничний
+                      </label>
+                  </span>
+
+                  <span>
+                    <span class="input_food">
+                       <input type="radio" id="b_lemonade" name="lemonade">
+                    </span>
+                  <label for="b_lemonade">
+                    Барбарис
+                  </label>
+              </span>
+            </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 100.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="name_of_food" id="alcohol_name">Алкогольні напої</div>
+
+<ul class="phone_menu_food">
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/alcohol/wine.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Вино
+                </p>
+
+                <section class="food_type">
+                    <form class="choose_food_type two_types_column">
+    
+                        <span>
+                              <span class="input_food">
+                                 <input type="radio" id="w_wine" name="wine">
+                              </span>
+                            <label for="w_wine">Біле</label>
+                        </span>
+    
+                        <span>
+                             <span class="input_food">
+                                  <input type="radio" id="r_wine" name="wine" checked>
+                             </span>
+                            <label for="r_wine">Червоне</label>
+                        </span>
+    
+                    </form>
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 180.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/alcohol/vodka.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Горілка
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 100.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/alcohol/wiski.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Віскі
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 300.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/alcohol/konyak.png height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Коньяк
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 310.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/alcohol/rom2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Ром
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 95.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/alcohol/tekila.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Текіла
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 120.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div  class="phone_border">
+            <div class="food_photo">
+                <img src=images/Menu/alcohol/pivo2.jpg height="200px" width="300px"  onclick="open_photo(this)">
+            </div>
+
+            <div class="food_text">
+                <p class="food_name">
+                    Пиво
+                </p>
+
+                <section class="food_type">
+                    
+                </section>
+            </div>
+
+            <div class="food_buy">
+
+                <p class="buy" onclick="add_el(this)">
+                    <span><b>Додати у кошик</b></span>
+                    <br>
+                    <img src="images/Icons/koshik2.png" width="98px">
+                </p>
+
+                <p class="price">
+                    <span>Ціна:</span>
+                    <span class="full_price"><span class="money"> 80.00</span> грн </span>
+                </p>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+<a href="#" class="linkers_none">
+    <div class="go_top">
+            <p>Вгору</p>
+    </div>
+</a>
+
+<footer id="footer">
+    <div class="kyiv_rest">
+        <a href="https://www.google.com.ua/maps/place/бул.+Тараса+Шевченко,+11А,+Киев,+02000/@50.443709,30.5149566,15.71z/data=!4m6!3m5!1s0x40d4cef8edd87169:0x1b783fc1f1681d20!8m2!3d50.442493!4d30.515711!16s%2Fg%2F11csjctyv2?hl=ru" target="_blank">
+          <img src="images/Pictures/kyiv_map_4.png">
+        </a>
+    </div>
+
+    <div class="footer_kyiv_name">
+       <div style="width:250px;"  >Наш київський заклад був відкритий 12 червня 2022 року у самому серці нашої неймовірної столиці - на бульварі Тараса Шевченка 11а
+        </div> 
+    </div>
+
+    <div class="footer_center">
+        <div style="padding-bottom: 7px; width: 600px;">Бажаємо Вам в процесі прийняття їжі відчути масу різноманітних вражень, нехай буде приємним Ваш відпочинок за столом, нехай порадують незвичайними смаковими поєднаннями страви. Приємного апетиту!
+        </div>
+
+        <div class="footer_phones">
+          <a href="tel: 0981234500" class="phone">098 123 45 00</a> 
+          <a href="mailto:desireua@gmail.com" class="mail">Desireua@gmail.com</a>  
+          <a href="tel: 0509876500" class="phone">050 987 65 00</a>
+        </div>
+    </div>
+
+    <div class="footer_odesa_name">
+        <div style="width:250px">Наш одеський ресторан знаходиться у дуже тихому та живописному місці - на березі Чорного моря, за адресою Набережна вулиця 12б</div> 
+    </div>
+
+    <div class="odesa_rest">
+        <a href="https://www.google.com.ua/maps/place/наб.+ул.,+12,+Одесса,+Одесская+область,+65000/@46.369598,30.7229752,15.02z/data=!4m6!3m5!1s0x40c7cb38fff5835f:0xe748e37c7999971a!8m2!3d46.3684288!4d30.7304967!16s%2Fg%2F11c1ch9d0s?hl=ru" target="_blank">
+             <img src="images/Pictures/odesa_map.png" >
+        </a>
+    </div>
+
+    <div class="desire_footer disp_menu ">
+        <img src=images/Food/desire.png class="desire_img_footer">
+    </div>
+</footer>
+
+<script src="menu_script.js"></script>
+</body>
+</html>

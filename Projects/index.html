@@ -1,0 +1,850 @@
+<!-- -- Active: 1681472595781@@127.0.0.1@3306@CP5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Desire</title>
+</head>
+
+
+<body>
+
+    <div class="image_main">
+        <div class="header">
+
+                <div class="logo_main">
+                    <a href="#popular">
+                        <!-- <img src="images/Logos/main_logo/main_logo_8.png" alt="Logo"> -->
+                        <img src="images/Logos/main_logo/main_l.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="booking_main_buttom" onclick="open_booking_main()">
+
+                        <p><img src=images/Icons/reservation.png width="33px">Бронювання</p>
+
+
+                </div>
+
+                <div class="menu_button_main">
+                    <a href="menu.html" class="linkers_none">
+                       <p>Меню</p>
+                    </a>
+                </div>
+
+                <div class="feedback_main" onclick="open_feedback()">
+                        <p>Надіслати відгук <img src="images/Icons/feedback-3.png" width="28px"></p>
+                </div>
+
+                <div class="about_us_main disp" id="open_moon">
+                        <img id="crescent_moon" src="images/Logos/food/open_moon.png" alt="About us" onclick="crescent_moon_change()">
+                </div>
+
+                <div class="full_moon" id="close_moon">
+                        <img id="full_moon" src="images/Logos/food/close_moon.png" alt="About us" onclick="full_moon_change()">
+                </div>
+
+
+        </div>
+
+
+            <p class="image_name">
+                <img src="images/Name/name.png" alt="Desire" width="685px">
+            </p>
+
+            <div class="down_button"> 
+                <a href="#menu" class="linkers_none">
+                      <img src="images/Buttons/f.png"  width="183px">
+                </a>
+            </div>
+    
+    </div>
+
+    <div class="phone_head disp">
+
+<div class="header_name_block">
+        <div class="logo_main">
+            <a href="#recomended">
+                <img src="images/Logos/main_logo/main_l.png" alt="Logo">
+            </a>
+            
+            <div class="esire">
+                <img src="images/Logos/main_logo/esire2.png" alt="" width="145px">
+            </div>
+        </div>
+
+        <!-- <div class="esire">esire</div> -->
+
+</div>
+
+            <div class="phone_menu_button">
+                <img src="images/Icons/menu3.png" alt="" width="80px" onclick="phone_open_menu()">
+            </div>
+
+        <div class="phone_menu disp">
+                <div class="phone_close_menu" onclick="phone_close_menu()">
+                    ✕
+                </div>
+
+            <ul>
+                
+                <li class="about_us_not_view" onclick="open_booking_main()">
+                      <span>Бронювання</span>
+                </li>
+               
+
+                <li class="about_us_not_view" onclick="open_feedback()">
+                  <span>Залишити відгук</span> 
+                </li>
+
+              
+                <li class="about_us_not_view">
+                    <a href="#popular">
+                        Популярні страви
+                    </a>
+                </li>
+               
+
+                <li class="about_us_not_view last_el">
+                    <a href="#sales">
+                        Знижки та вигоди
+                    </a>  
+                </li>
+
+                <li class="about_us_view disp">
+                    Бульвар Шевченка 11а
+                </li>
+
+                <li class="about_us_view disp">
+                  Набережна вулиця 12б
+                </li>
+
+                <li class="about_us_view disp">
+                   098 123 45 00
+                </li >
+
+                <li class="about_us_view disp">
+                    050 987 65 00
+                </li>
+
+                <li class="about_us_view disp">
+                    10:00 - 22:00
+                </li>
+
+                <li class="phone_about_us pointer_down" onclick="phone_about_us()">
+                    Про нас
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div class="phone_menu_name disp">
+    <div>
+        Вітаємо <span class="small_biger">Вас у нашому ресторані "Desire"</span> !
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <a href="menu.html">Натисність, аби перейти у меню</a> <span class="small_biger">,або оберіть категорію їжи, яка вам до смаку:</span>
+    </div>
+</div>
+
+
+    <div class="phone_foods disp">
+        <ul>
+          <a href="menu.html#breakfast">
+            <li>
+                <div class="pad_top">
+                  <img src="images/Icons/fried-egg.png" alt="" width="20px">  Сніданки
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+         </a>
+
+        <a href="menu.html#salads">
+            <li>
+                <div class="pad_top">
+                    <img src="images/Icons/salad.png" alt="" width="20px"> 
+                    Салати
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+            
+        <a href="menu.html#soups">
+            <li>
+                <div class="pad_top"><img src="images/Icons/soup.png" alt="" width="20px"> 
+                    Супи
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+
+            <a href="menu.html#pizza">
+            <li>
+                <div class="pad_top">
+                    <img src="images/Icons/pizza.png" alt="" width="20px"> 
+                    Піца
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+
+        <a href="menu.html#garnish">
+            <li>
+                <div class="pad_top">
+                    <img src="images/Icons/pasta.png" alt="" width="20px"> 
+                    Гарніри
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+
+        <a href="menu.html#meat">
+            <li>
+                <div class="pad_top">
+                    <img src="images/Icons/turkey.png" alt="" width="20px"> 
+                    М'ясні страви
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+
+        <a href="menu.html#fish">
+            <li>
+                <div class="pad_top">
+                    <img src="images/Icons/asian-food.png" alt="" width="20px"> 
+                    Рибні страви
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+
+        <a href="menu.html#desserts">
+            <li>
+                <div class="pad_top">
+                    <img src="images/Icons/piece-of-cake.png" alt="" width="20px"> 
+                    Десерти
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+
+        <a href="menu.html#no-alcohol">
+            <li>
+                <div class="pad_top">
+                    <img src="images/Buttons/drinks.png" alt="" width="20px"> 
+                    Безалкогольні напої
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a>
+
+          <a href="menu.html#alcohol">
+             <li>
+                <div class="pad_top">
+                    <img src="images/Icons/wine.png" alt="" width="20px"> 
+                    Алкогольні напої
+                </div>
+                    <div class="arrow_right">
+⌃
+                    </div>
+            </li>
+        </a> 
+
+        </ul>
+    </div>
+
+
+
+    <div class="disp" id="full_main_space">
+        <div class="booking_main" id="booking_main">
+            <div class="booking_exit_main" id="booking_exit_main">
+                ✕
+            </div>
+            <div class="booking_body">
+                <p>Бронювання<br>столика</p>
+
+                <form action="" name="booking_menu_form" class="booking_menu_form" onsubmit="bok_form(event)">
+       <section>1. Оберіть місто, в якому находиться заклад:</section>
+
+                    <input type="radio" name="rest" id="bok_kyiv" checked>
+                    <label for="bok_kyiv" style="padding-right: 40px;">Київ</label>
+                   
+
+
+           
+              
+                    <input type="radio" name="rest" id="bok_od">
+                    <label for="bok_od">Одеса</label>
+  
+  
+<br>
+          <section>2. Введіть Ваше ім'я:</section>
+                     <input type="text" placeholder="Ім'я" required>
+       
+<br>
+<section>3. Введіть Вашe прізвище:</section>
+                    <input type="text" placeholder="Прізвище" required>
+                
+<br>
+<section>3. Введіть Ваш номер телефону:</section>
+                    <input type="tel" placeholder="0987654321" required pattern="[0-9]+" title="Вводіть лише цифри">
+
+<br>
+<section>4. Введіть Ваш email:</section>
+            <input type="email" placeholder="desireua@gmail.com">
+<br>
+<section>5. Оберіть дату та час, на яку Вам необхідно забронювати стіл:</section>
+            <input type="datetime-local" required>
+
+<br>
+<section>6. Якщо це відомо, то надайте, будь-ласка інформацію, скільки буде людей:</section>
+            <input type="number">
+
+<br>
+<section>7. Ви можете залиши коментарі (за потреби):</section>
+            <input type="text">
+                
+<br>
+                    <input type="submit" value="Підтвердити" class="cursor" onclick>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="disp" id="full_feedback_space">
+        <div class="feedback" id="feedback">
+            <div class="feedback_exit" id="feedback_exit">
+                ✕
+            </div>
+
+<!-- <p class="vidguk">Відгук</p>/ -->
+
+     <form action="" name="feedback_form" class="feedback_form">
+
+        <p>1. Оберіть заклад (за потреби):</p>
+<div class="flex_feedback">
+    <span>
+        <!-- <input type="radio" name="feedb" id="kyiv_feedb">
+        <label for="kyiv_feedb">Київ</label> -->
+        <span class="kyiv_feedback" onclick="kyiv_color()">Київ</span>
+       
+    </span>
+
+    <span>
+        <!-- <input type="radio" name="feedb" id="odesa_feedb">
+        <label for="odesa_feedb">Одеса</label> -->
+        <span class="odesa_feedback" onclick="odesa_color()">Одеса</span>
+    </span>
+</div>
+
+<br>
+
+<p style="margin-bottom: 0;">2. Дайте свою оцінку щодо нашого персоналу:</p>
+
+<div class="stars_flex">
+    <span class="stars_1" onmousemove="yellow_stars(1)" onmouseout="grey_stars(1)" onclick="choose_stars(1)">★</span>
+    <span class="stars_1" onmousemove="yellow_stars(2)" onmouseout="grey_stars(2)" onclick="choose_stars(2)">★</span>
+    <span class="stars_1" onmousemove="yellow_stars(3)" onmouseout="grey_stars(3)" onclick="choose_stars(3)">★</span>
+    <span class="stars_1" onmousemove="yellow_stars(4)" onmouseout="grey_stars(4)" onclick="choose_stars(4)">★</span>
+    <span class="stars_1" onmousemove="yellow_stars(5)" onmouseout="grey_stars(5)" onclick="choose_stars(5)">★</span>
+</div>
+
+<p style="margin-bottom: 0;">3. Дайте свою оцінку щодо нашої їжи:</p>
+
+<div class="stars_flex">
+    <span class="stars_2" onmousemove="yellow_stars_2(1)" onmouseout="grey_stars_2(1)" onclick="choose_stars_2(1)">★</span>
+    <span class="stars_2" onmousemove="yellow_stars_2(2)" onmouseout="grey_stars_2(2)" onclick="choose_stars_2(2)">★</span>
+    <span class="stars_2" onmousemove="yellow_stars_2(3)" onmouseout="grey_stars_2(3)" onclick="choose_stars_2(3)">★</span>
+    <span class="stars_2" onmousemove="yellow_stars_2(4)" onmouseout="grey_stars_2(4)" onclick="choose_stars_2(4)">★</span>
+    <span class="stars_2" onmousemove="yellow_stars_2(5)" onmouseout="grey_stars_2(5)" onclick="choose_stars_2(5)">★</span>
+</div>
+
+<p>4. Будь-ласка, напишіть свої враження щодо нашого ресторану:</p>
+<!-- <br> -->
+        <textarea class="comment"> </textarea>
+<br>
+        <input type="submit" value="Відправити" class="feedback_send" onclick="al_feedback()">
+     </form>
+        </div>
+    </div>
+
+
+
+    <div>
+
+        <h1 id="menu">
+            <a href="menu.html" class="linkers_none">
+                Menu
+            </a>
+        </h1>
+
+         <ul class="food">
+            <a href="menu.html#breakfast">
+                <li onmouseover="breakfast_on()" onmouseout="breakfast_out()">
+                    <img src="images/Food/breakfast.jpg" width="380px" height="205px" >
+                    <p class="breakfast_name disp" id="food_breakfast">Сніданки</p>
+                </li>
+            </a>   
+
+            <a href="menu.html#salads">
+                <li  onmouseover="salads_on()" onmouseout="salads_out()">
+                    <img src="images/Food/salads11.jpg" width="380px" height="205px">
+                    <p class="salads_name disp" id="food_salads">Салати</p>
+                </li>
+            </a>
+
+            <a href="menu.html#soups">
+                <li  onmouseover="soups_on()" onmouseout="soups_out()">
+                    <img src="images/Food/soups2.jpg" width="380px" height="205px">
+                    <p class="soups_name disp" id="food_soups">Супи</p>
+                </li>
+            </a>
+
+            <a href="menu.html#pizza">
+                <li onmouseover="pizza_on()" onmouseout="pizza_out()">
+                    <img src="images/Food/pizza.jpg" width="380px" height="205px">
+                    <p class="pizza_name disp" id="food_pizza">Піца</p>
+                </li>
+            </a>
+
+            <a href="menu.html#garnish">
+                <li  onmouseover="garnish_on()" onmouseout="garnish_out()">
+                    <img src="images/Food/garnish6.jpg" width="380px" height="205px">
+                    <p class="garnish_name disp" id="food_garnish">Гарніри</p>
+                </li>
+            </a>
+
+            <a href="menu.html#meat">
+                <li onmouseover="meat_on()" onmouseout="meat_out()">
+                    <img src="images/Food/meat16.png" width="380px" height="205px">
+                    <p class="meat_name disp" id="food_meat">М'ясні страви</p>
+                </li>
+            </a>
+
+            <a href="menu.html#fish">
+                <li onmouseover="fish_on()" onmouseout="fish_out()">
+                    <img src="images/Food/fish2.png" width="380px" height="205px">
+                    <p class="seafood_name disp" id="food_fish">Рибні страви</p>
+                </li>
+            </a>
+
+            <a href="menu.html#desserts">
+                <li onmouseover="desserts_on()" onmouseout="desserts_out()">
+                    <img src="images/Food/desserts3.jpg" width="380px" height="205px">
+                    <p class="desserts_name disp" id="food_desserts">Десерти</p>
+                </li>
+            </a>
+
+         </ul>
+
+         
+         <ul class="drinks">
+            
+            <a href="menu.html#no-alcohol">
+                <li onmouseover="no_alcohol_on()" onmouseout="no_alcohol_out()">
+                    <p class="no-alcohol_name disp" id="no-alcohol_drinks">Безалкогольні напої</p>
+                    <img src="images/Food/no-alcohol10.jpg" width="820px" height="250px">
+                </li>
+            </a>
+            
+            <a href="menu.html#alcohol">
+                <li onmouseover="alcohol_on()" onmouseout="alcohol_out()">
+                    <img src="images/Food/alcohol4.png" width="820px" height="250px">
+                    <p class="alcohol_name disp" id="alcohol_drinks">Алкогольні напої</p>
+                </li>
+            </a>
+
+         </ul>
+
+    </div>
+
+
+    <div>
+        <h2 id="popular">
+            Страви, які найчастіше замовляють:
+        </h2>
+
+         <ul class="phone_recomended_food disp">
+            <a href="menu.html#pop1">
+             <li>
+                <div>
+                    <div>Млинці з нутеллою</div>
+                    <div>42.45 грн (3 од.)</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/breakfast/pancakes2.jpg" alt="" width="80px">
+                    </div>
+             </li>
+            </a>
+
+            <a href="menu.html#pop2">
+             <li>
+                <div>
+                    <div>Піца Маргарита</div>
+                    <div>290.00 грн (480г)</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/pizza/margarita.jpg" alt="" width="80px">
+                    </div>
+             </li>
+            </a>
+
+            <a href="menu.html#pop3">
+             <li>
+                <div>
+                    <div>Картопля фрі</div>
+                    <div>90.00 грн</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/garnish/garnish1.jpg" alt="" width="80px">
+                    </div>
+             </li>
+             </a>
+
+             <a href="menu.html#pop4">
+            <li>
+                <div>
+                    <div>Креветки у паніровці</div>
+                    <div>219.00 грн (8 од.)</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/fish/krevetki3.jpg" alt="" width="80px">
+                    </div>
+             </li>
+             </a>
+        </ul>
+
+         <ul class="popular_food">   
+            <a href="menu.html#pop1">
+                <li onmouseover="pop1_on()" onmouseout="pop1_out()" class="top_pop">
+                    <img src="images/Menu/breakfast/pancakes2.jpg" width="375px" height="205px">
+                    <p class="pop1 disp" id="pop1">Млинці з нутеллою<br>42.45 грн (3 од.)</p>
+                </li>
+            </a>
+             
+            <a href="menu.html#pop2">
+                <li onmouseover="pop2_on()" onmouseout="pop2_out()" class="top_pop">
+                    <img src="images/Menu/pizza/margarita.jpg" width="375px" height="205px">
+                    <p class="pop2 disp" id="pop2">Піца Маргарита<br>290.00 грн (480г)</p>
+                </li>
+            </a>
+            
+            <a href="menu.html#pop3">
+                <li onmouseover="pop3_on()" onmouseout="pop3_out()" class="top_pop">
+                    <img src="images/Menu/garnish/garnish1.jpg" width="375px" height="205px">
+                    <p class="pop3 disp" id="pop3">Картопля фрі<br>90.00 грн</p>
+                </li>
+            </a>
+             
+            <a href="menu.html#pop4">
+                <li onmouseover="pop4_on()" onmouseout="pop4_out()" class="top_pop">
+                    <img src="images/Menu/fish/krevetki3.jpg" width="375px" height="205px">
+                    <p class="pop4 disp" id="pop4">Креветки у паніровці<br>219.00 грн (8 од.)</p>
+                </li>
+            </a>
+         </ul>
+    </div>
+
+
+    <div>
+        <h3 id="sales">
+            Сезонні пропозиції та знижки:
+        </h3>
+
+        <ul class="phone_recomended_food disp">
+
+            <a href="menu.html#breakfast_name">
+            <li>
+               <div>
+                   <div>Круасан</div>
+                   <div>2 за 50.00 грн</div>
+               </div>
+
+                   <div class="pad_food">
+                       <img src="images/Menu/breakfast/croissant.jpg" alt="" width="80px">
+                   </div>
+            </li>
+            </a>
+
+            <a href="menu.html#sales_2">
+            <li>
+               <div>
+                   <div>Піца Гавайська</div>
+                   <div><s>280.00 грн</s> 215.00 грн</div>
+               </div>
+
+                   <div class="pad_food">
+                       <img src="images/Menu/pizza/gavayskaya.jpg" alt="" width="80px">
+                   </div>
+            </li>
+        </a>
+
+            <a href="menu.html#sales_3">
+            <li>
+               <div>
+                   <div>Каре ягняти</div>
+                   <div><s>350.00 грн</s>   290.00 грн</div>
+               </div>
+
+                   <div class="pad_food">
+                       <img src="images/Menu/meat/kare.jpeg" alt="" width="80px">
+                   </div>
+            </li>
+        </a>
+
+        <a href="menu.html#sales_4">
+           <li>
+               <div>
+                   <div>Торт Наполеон</div>
+                   <div>90.00 грн (260г)</div>
+               </div>
+
+                   <div class="pad_food">
+                       <img src="images/Menu/desserts/napoleon.jpg" alt="" width="80px">
+                   </div>
+            </li>
+        </a>
+       </ul>
+
+         <ul class="sales_food"> 
+            <a href="menu.html#breakfast_name">
+                <li onmouseover="sales1_on()" onmouseout="sales1_out()" class="top_sales">
+                    <img src="images/Menu/breakfast/croissant.jpg" width="375px" height="205px">
+                    <p class="sales1 disp" id="sales1">Круасан<br>2 за 50.00 грн</p>
+                </li>
+            </a>
+            
+            <!-- <a href="#">
+                <li onmouseover="sales2_on()" onmouseout="sales2_out()" class="top_sales">
+                    <img src="images/Menu/meat/kare.jpeg" width="380px" height="205px">
+                    <p class="sales2 disp" id="sales2">Салат з руколи<br> <s>210.00 грн</s> 175.00 грн</p>
+                </li>
+            </a> -->
+           
+            <a href="menu.html#sales_2">
+                <li onmouseover="sales3_on()" onmouseout="sales3_out()" class="top_sales">
+                    <img src="images/Menu/pizza/gavayskaya.jpg" width="375px" height="205px">
+                    <p class="sales3 disp" id="sales3">Піца Гавайська<br> <s>280.00 грн</s> 215.00 грн</p>
+                </li>
+            </a>
+
+            <a href="menu.html#sales_3">
+                <li onmouseover="sales2_on()" onmouseout="sales2_out()" class="top_sales">
+                    <img src="images/Menu/meat/kare.jpeg" width="375px" height="205px">
+                    <p class="sales2 disp" id="sales2">Каре ягняти<br> <s>350.00 грн</s> 290.00 грн</p>
+                </li>
+            </a>
+             
+            <a href="menu.html#sales_4">
+                <li onmouseover="sales4_on()" onmouseout="sales4_out()" class="top_sales">
+                    <img src="images/Menu/desserts/napoleon.jpg" width="375px" height="205px">
+                    <p class="sales4 disp" id="sales4">Торт Наполеон<br>
+                        90.00 грн (260г)</p>
+                </li>
+            </a>
+         </ul>
+         
+    </div>
+
+
+    <div>
+        <h4 id="recomended">
+           Рекомендації від нашого Шеф-кухаря:
+        </h4>
+
+        <ul class="phone_recomended_food disp">
+            <a href="menu.html#rec_1">
+             <li>
+                <div>
+                    <div>Оладки</div>
+                    <div>45.00 грн (3 од.)</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/breakfast/pancakes.jpg" alt="" width="80px">
+                    </div>
+             </li>
+            </a>
+
+            <a href="menu.html#pizza_name">
+             <li>
+                <div>
+                    <div>Піца Карбонара</div>
+                    <div>330.00 грн</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/pizza/karbonara.jpg" alt="" width="80px">
+                    </div>
+             </li>
+             </a>
+
+             <a href="menu.html#rec_4">
+             <li>
+                <div>
+                    <div>Паста</div>
+                    <div>110.00 грн</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/garnish/Pasta.jpg" alt="" width="80px">
+                    </div>
+             </li>
+            </a>
+
+             <a href="menu.html#meat_name">
+             <li>
+                <div>
+                    <div>Стейк</div>
+                    <div>425.00 грн</div>
+                </div>
+
+                    <div class="pad_food">
+                        <img src="images/Menu/meat/stake2.jpg" alt="" width="80px">
+                    </div>
+             </li>
+            </a>
+
+        </ul>
+
+         <ul class="recomended_food">
+            <a href="menu.html#rec_1">
+                <li onmouseover="rec1_on()" onmouseout="rec1_out()" class="top_rec">
+                    <img src="images/Menu/breakfast/pancakes.jpg" width="375px" height="205px">
+                    <p class="rec1 disp" id="rec1">Оладки<br>45.00 грн (3 од.)</p>
+                </li>
+            </a>
+
+             <a href="menu.html#pizza_name">
+                <li onmouseover="rec2_on()" onmouseout="rec2_out()" class="top_rec">
+                    <img src="images/Menu/pizza/karbonara.jpg" width="375px" height="205px">
+                    <p class="rec2 disp" id="rec2">Піца Карбонара<br>330.00 грн</p>
+                </li>
+            </a>
+
+             <!-- <a href="menu.html#meat_name">
+                <li onmouseover="rec3_on()" onmouseout="rec3_out()" class="top_rec">
+                    <img src="images/Menu/meat/stake2.jpg" width="380px" height="205px">
+                    <p class="rec3 disp" id="rec3">Стейк<br>425.00 грн</p>
+                </li>
+            </a> -->
+
+            <a href="menu.html#rec_4">
+                <li onmouseover="rec4_on()" onmouseout="rec4_out()" class="top_rec">
+                    <img src="images/Menu/garnish/Pasta.jpg" width="375px" height="205px">
+                    <p class="rec4 disp" id="rec4">Паста<br>110.00 грн</p>
+                </li>
+            </a>
+
+            <a href="menu.html#meat_name">
+                <li onmouseover="rec3_on()" onmouseout="rec3_out()" class="top_rec">
+                    <img src="images/Menu/meat/stake2.jpg" width="375px" height="205px">
+                    <p class="rec3 disp" id="rec3">Стейк<br>425.00 грн</p>
+                </li>
+            </a>
+
+
+         </ul>
+    </div>
+
+<div class="desire_main_margin">
+    <img src=images/Food/desire.png class="desire_img_footer_main">
+</div>
+
+    <footer>
+        <div class="kyiv_rest" id="footer">
+            <a href="https://www.google.com.ua/maps/place/бул.+Тараса+Шевченко,+11А,+Киев,+02000/@50.443709,30.5149566,15.71z/data=!4m6!3m5!1s0x40d4cef8edd87169:0x1b783fc1f1681d20!8m2!3d50.442493!4d30.515711!16s%2Fg%2F11csjctyv2?hl=ru" target="_blank">
+              <img src="images/Pictures/kyiv_map_4.png">
+            </a>
+        </div>
+    
+        <div class="footer_kyiv_name">Наш київський заклад був відкритий 12 червня 2022 року у самому серці нашої неймовірної столиці - на бульварі Тараса Шевченка 11а
+        </div>
+    
+        <div class="footer_center">
+            <div style="padding-bottom: 7px;">Бажаємо Вам в процесі прийняття їжі відчути масу різноманітних вражень, нехай буде приємним Ваш відпочинок за столом, нехай порадують незвичайними смаковими поєднаннями страви. Приємного апетиту!
+            </div>
+    
+            <div class="footer_phones">
+              <a href="tel: 0981234500" class="phone">098 123 45 00</a> 
+              <a href="mailto:desireua@gmail.com" class="mail">Desireua@gmail.com</a>  
+              <a href="tel: 0509876500" class="phone">050 987 65 00</a>
+            </div>
+        </div>
+    
+        <div class="footer_odesa_name">Наш одеський ресторан знаходиться у дуже тихому та живописному місці - на березі Чорного моря, за адресою Набережна вулиця 12б
+        </div>
+    
+        <div class="odesa_rest">
+            <a href="https://www.google.com.ua/maps/place/наб.+ул.,+12,+Одесса,+Одесская+область,+65000/@46.369598,30.7229752,15.02z/data=!4m6!3m5!1s0x40c7cb38fff5835f:0xe748e37c7999971a!8m2!3d46.3684288!4d30.7304967!16s%2Fg%2F11c1ch9d0s?hl=ru" target="_blank">
+                 <img src="images/Pictures/odesa_map.png" >
+            </a>
+        </div>
+
+
+
+        <div class="phone_footer disp">
+            <ul>
+                <li class="phone_work_time">
+                    Робочий час:<br>10:00 - 22:00
+                </li>
+
+                <li class="phone_rest_1">
+                    
+                    <a href="https://www.google.com.ua/maps/place/бул.+Тараса+Шевченко,+11А,+Киев,+02000/@50.443709,30.5149566,15.71z/data=!4m6!3m5!1s0x40d4cef8edd87169:0x1b783fc1f1681d20!8m2!3d50.442493!4d30.515711!16s%2Fg%2F11csjctyv2?hl=ru" target="_blank">
+                    Наш київський заклад:<br>бульвар  Шевченка 11а
+            </a>
+        </li>
+                <li class="phone_rest_2">
+                    <a href="https://www.google.com.ua/maps/place/наб.+ул.,+12,+Одесса,+Одесская+область,+65000/@46.369598,30.7229752,15.02z/data=!4m6!3m5!1s0x40c7cb38fff5835f:0xe748e37c7999971a!8m2!3d46.3684288!4d30.7304967!16s%2Fg%2F11c1ch9d0s?hl=ru" target="_blank">
+                        Наш одеський заклад:<br>Набережна вулиця 12б 
+                </a>
+            </li>
+            <li class="phone_call">
+                <a href="tel: 0981234500">098 123 45 00</a> 
+            </li> 
+              
+        <li class="phone_call">
+            <a href="tel: 0509876500">050 987 65 00</a>
+        </li>
+           <li class="phone_mail">
+            <a href="mailto:desireua@gmail.com" class="mail">Desireua@gmail.com</a>  
+           </li> 
+            </ul>
+        </div>
+
+    </footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
